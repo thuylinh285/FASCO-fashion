@@ -1,0 +1,4185 @@
+<!doctype html>
+<html><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>FASCO Fashion </title>
+	
+
+	<link rel="stylesheet" href="css/main-style.css">
+	<link rel="stylesheet" href="css/hover.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+	
+	
+	
+	
+	
+<style id="st_globalStyles">
+/* MEDIA QUERIES */
+
+
+/* LOAD PROGRESS */
+
+
+
+/* CURSOR */
+
+
+
+
+
+
+	
+	<style id="hotspots-styles">
+  x
+  </style>
+<style>
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+@import url("https://fonts.googleapis.com/css?family=Poppins:500,400|Volkhov:400");
+
+
+
+/* The following line is used to measure usage of this code. You can remove it if you want. */
+
+
+
+
+
+
+
+
+
+.auto div {
+  --z-index: -1;
+  opacity: 0;
+  position: absolute;
+}
+
+.auto input {
+  --z-index: -1;
+  opacity: 0;
+  position: absolute;
+}
+
+.auto.container-center-vertical,
+.auto.container-center-horizontal {
+  opacity: 1;
+}
+
+.overlay-base {
+  display: none;
+  height: 100%;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.overlay-base.appear {
+  align-items: center;
+  animation: reveal 0.3s ease-in-out 1 normal forwards;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 0;
+}
+
+.overlay-base.disappear {
+  animation: reveal 0.3s ease-in-out 1 reverse forwards;
+  display: block;
+  opacity: 1;
+  pointer-events: none;
+}
+
+.overlay-base.disappear * {
+  pointer-events: none;
+}
+
+@keyframes reveal {
+  from { opacity: 0 }
+ to { opacity: 1 }
+}
+
+.nodelay {
+  animation-delay: 0s;
+}
+
+.align-self-flex-start {
+  align-self: flex-start;
+}
+
+.align-self-flex-end {
+  align-self: flex-end;
+}
+
+.align-self-flex-center {
+  align-self: flex-center;
+}
+
+.valign-text-middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.valign-text-bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+input:focus {
+  outline: none;
+}
+
+.listeners-active,
+.listeners-active * {
+  pointer-events: auto;
+}
+
+.hidden,
+.hidden * {
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.smart-layers-pointers,
+.smart-layers-pointers * {
+  pointer-events: auto;
+  visibility: visible;
+}
+
+.listeners-active-click,
+.listeners-active-click * {
+  cursor: pointer;
+}
+
+* {
+  box-sizing: border-box;
+}
+:root { 
+  --alabaster: #fafafa;
+  --alto: #d9d9d9;
+  --black: #000000;
+  --gravel: #484848;
+  --nobel: #b5b5b5;
+  --sonic-silver: #757575;
+  --stack: #8a8a8a;
+  --tart-orange: #ff4646;
+  --white: #ffffff;
+  --white-2: #ffffff69;
+  --white-3: #ffffffa1;
+ 
+  --font-size-l: 20px;
+  --font-size-m: 16px;
+  --font-size-s: 12px;
+  --font-size-xl: 24px;
+  --font-size-xxl: 28px;
+  --font-size-xxxl: 32px;
+  --font-size-xxxxl: 46px;
+ 
+  --font-family-digital_numbers-regular: "Digital Numbers-Regular", Helvetica;
+  --font-family-poppins: "Poppins", Helvetica;
+  --font-family-volkhov: "Volkhov", Helvetica;
+}
+.poppins-normal-gravel-16px {
+  color: var(--gravel);
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.poppins-medium-gravel-20px {
+  color: var(--gravel);
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-l);
+  font-style: normal;
+  font-weight: 500;
+}
+
+.poppins-normal-stack-16px {
+  color: var(--stack);
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.poppins-normal-white-16px {
+  color: var(--white);
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.volkhov-normal-gravel-46px {
+  color: var(--gravel);
+  font-family: var(--font-family-volkhov);
+  font-size: var(--font-size-xxxxl);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.poppins-normal-black-16px {
+  color: var(--black);
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.poppins-medium-gravel-24px {
+  color: var(--gravel);
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-xl);
+  font-style: normal;
+  font-weight: 500;
+}
+
+.poppins-normal-tart-orange-12px {
+  color: var(--tart-orange);
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-s);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.poppins-medium-gravel-12px {
+  color: var(--gravel);
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-s);
+  font-style: normal;
+  font-weight: 500;
+}
+
+.poppins-medium-stack-12px {
+  color: var(--stack);
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-s);
+  font-style: normal;
+  font-weight: 500;
+}
+
+.poppins-normal-gravel-12px {
+  color: var(--gravel);
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-s);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.digitalnumbers-regular-normal-gravel-32px {
+  color: var(--gravel);
+  font-family: var(--font-family-digital_numbers-regular);
+  font-size: var(--font-size-xxxl);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.poppins-normal-gravel-24px {
+  color: var(--gravel);
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-xl);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.poppins-normal-sonic-silver-16px {
+  color: var(--sonic-silver);
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+}
+
+:root {
+}
+
+
+/* screen - homepage */
+
+.homepage {
+  background-color: var(--white);
+  height: 7343px;
+  overflow: hidden;
+  overflow-x: hidden;
+  position: relative;
+  width: 1920px;
+}
+
+.homepage .footer-zYNucu {
+  background-color: transparent;
+  height: 138px;
+  left: 0px;
+  position: absolute;
+  top: 7182px;
+  width: 1920px;
+}
+
+.homepage .data-bUVegb {
+  height: 108px;
+  left: 320px;
+  top: 30px;
+  width: 1282px;
+}
+
+.homepage .copyright-text-RSUVkZ {
+  background-color: transparent;
+  height: auto;
+  left: 512px;
+  letter-spacing: 0.00px;
+  line-height: 26px;
+  position: absolute;
+  text-align: center;
+  top: 82px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.homepage .logo-itema-RSUVkZ {
+  background-color: transparent;
+  height: 32px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 1282px;
+}
+
+.homepage .items-x6dBFz {
+  background-color: transparent;
+  height: 24px;
+  left: 682px;
+  position: absolute;
+  top: 4px;
+  width: 610px;
+}
+
+.homepage .careers-EOZ97H {
+  background-color: transparent;
+  height: auto;
+  left: 380px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 0px;
+  width: auto;
+}
+
+.homepage .blog-EOZ97H {
+  background-color: transparent;
+  height: auto;
+  left: 482px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 0px;
+  width: auto;
+}
+
+.homepage .invoicing-EOZ97H {
+  background-color: transparent;
+  height: auto;
+  left: 160px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 0px;
+  width: auto;
+}
+
+.homepage .contract-EOZ97H {
+  background-color: transparent;
+  height: auto;
+  left: 271px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 0px;
+  width: auto;
+}
+
+.homepage .faqs-EOZ97H {
+  background-color: transparent;
+  height: auto;
+  left: 555px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 0px;
+  width: auto;
+}
+
+.homepage .support-center-EOZ97H {
+  background-color: transparent;
+  height: auto;
+  left: 0px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 0px;
+  width: auto;
+}
+
+.homepage .fasco-x6dBFz {
+  font-size: var(--font-size-xxxl);
+  line-height: 32px;
+  top: 0px;
+}
+
+.homepage .separator-bUVegb {
+  background-color: transparent;
+  height: 1px;
+  left: 0px;
+  object-fit: cover;
+  position: absolute;
+  top: -1px;
+  width: 1920px;
+}
+
+.homepage .subscribe-zYNucu {
+  background-color: transparent;
+  height: 747px;
+  left: 260px;
+  position: absolute;
+  top: 6385px;
+  width: 1400px;
+}
+
+.homepage .group-1000001746-cxUXOc {
+  background-color: transparent;
+  height: 333px;
+  left: 384px;
+  position: absolute;
+  top: 207px;
+  width: 631px;
+}
+
+.homepage .button-ygKJBp {
+  left: 211px;
+  top: 277px;
+  width: 209px;
+}
+
+.homepage .bg-dtHx9Z {
+  background-color: var(--black);
+  border-radius: 10px;
+  box-shadow: 0px 20px 35px #00000026;
+  height: 56px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 207px;
+}
+
+.homepage .subscribe-now-dtHx9Z {
+  background-color: transparent;
+  height: auto;
+  left: 44px;
+  letter-spacing: 0.00px;
+  line-height: 16px;
+  position: absolute;
+  text-align: center;
+  top: 20px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.homepage .email-input-field-ygKJBp {
+  background-color: transparent;
+  height: 86px;
+  left: 0px;
+  position: absolute;
+  top: 161px;
+  width: 633px;
+}
+
+.homepage .bg-gY8XCJ {
+  background-color: var(--white);
+  box-shadow: 0px 3.0185184478759766px 3.1481480598449707px #00000003 , 0px 13.281481742858887px 6.518518447875977px #00000004 , 0px 32.599998474121094px 13px #00000005 , 0px 62.785186767578125px 25.481481552124023px #00000006 , 0px 105.64814758300781px 46.85185241699219px #00000008 , 0px 163px 80px #0000000a;
+  height: 86px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 631px;
+}
+
+.homepage .email-gY8XCJ {
+  background-color: transparent;
+  color: var(--stack);
+  font-family: var(--font-family-poppins);
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  height: auto;
+  left: 30px;
+  letter-spacing: 0.00px;
+  line-height: 26px;
+  position: absolute;
+  text-align: left;
+  top: 28px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.homepage .title-text-ygKJBp {
+  height: 131px;
+  left: 0px;
+  top: 0px;
+  width: 635px;
+}
+
+.homepage .lorem-ipsum-dolor-si-WDJc5J {
+  left: 8px;
+  line-height: 26px;
+  text-align: center;
+  top: 79px;
+  width: 614px;
+}
+
+.homepage .subscribe-to-our-newsletter-WDJc5J {
+  background-color: transparent;
+  height: auto;
+  left: 0px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 0px;
+  width: auto;
+}
+
+.homepage .image-2-cxUXOc {
+  background-color: transparent;
+  height: 747px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 355px;
+}
+
+.homepage .image-3-cxUXOc {
+  background-color: transparent;
+  height: 747px;
+  left: 1063px;
+  position: absolute;
+  top: 0px;
+  width: 337px;
+}
+
+.homepage .testimonials-zYNucu {
+  background-color: transparent;
+  height: 840px;
+  left: 0px;
+  position: absolute;
+  top: 5395px;
+  width: 1920px;
+}
+
+.homepage .bg-L773TV {
+  background-color: var(--alabaster);
+  height: 840px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 1920px;
+}
+
+.homepage .title-text-L773TV {
+  height: 105px;
+  left: 602px;
+  top: 100px;
+  width: 720px;
+}
+
+.homepage .lorem-ipsum-dolor-si-dhjzdF {
+  left: 51px;
+  line-height: 26px;
+  text-align: center;
+  top: 79px;
+  width: 614px;
+}
+
+.homepage .this-is-what-our-customers-say-dhjzdF {
+  background-color: transparent;
+  height: auto;
+  left: 0px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 0px;
+  width: auto;
+}
+
+.homepage .card-L773TV {
+  height: 300px;
+  left: 1032px;
+  top: 329px;
+  width: 648px;
+}
+
+.homepage .bg-mx95Qb {
+  background-color: var(--white);
+  border-radius: 7.5px;
+  box-shadow: 0px 14.999999046325684px 44.999996185302734px #2d213c14;
+  height: 300px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 648px;
+}
+
+.homepage .data-mx95Qb {
+  height: 182px;
+  left: 296px;
+  top: 52px;
+  width: 320px;
+}
+
+.homepage .stars-05S6fo {
+  height: 14px;
+  left: 0px;
+  top: 74px;
+  width: 71px;
+}
+
+.homepage .just-what-i-was-look-05S6fo {
+  background-color: transparent;
+  height: auto;
+  left: 0px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 0px;
+  width: 314px;
+}
+
+.homepage .ui-designer-05S6fo {
+  top: 164px;
+}
+
+.homepage .megen-w-05S6fo {
+  background-color: transparent;
+  color: var(--gravel);
+  font-family: var(--font-family-volkhov);
+  font-size: var(--font-size-xl);
+  font-style: normal;
+  font-weight: 400;
+  height: auto;
+  left: -0px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 123px;
+  width: auto;
+}
+
+.homepage .separator-05S6fo {
+  background-color: var(--gravel);
+  height: 1px;
+  left: -0px;
+  position: absolute;
+  top: 111px;
+  width: 172px;
+}
+
+.homepage .image-mx95Qb {
+  height: 196px;
+  left: 37px;
+  top: 52px;
+  width: 197px;
+}
+
+.homepage .bg-rrF9Kd {
+  background-color: var(--alto);
+  height: 181px;
+  left: 0px;
+  position: absolute;
+  top: 15px;
+  width: 181px;
+}
+
+.homepage .image-rrF9Kd {
+  height: 182px;
+  left: 16px;
+  top: 0px;
+  width: 182px;
+}
+
+.homepage .card-6U14ry {
+  height: 299px;
+  left: 240px;
+  top: 329px;
+  width: 646px;
+}
+
+.homepage .bg-aKJAGq {
+  background-color: var(--white);
+  border-radius: 7.48px;
+  box-shadow: 0px 14.953703880310059px 44.86111068725586px #2d213c14;
+  height: 299px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 646px;
+}
+
+.homepage .data-aKJAGq {
+  height: 181px;
+  left: 295px;
+  top: 52px;
+  width: 319px;
+}
+
+.homepage .stars-xAwZEq {
+  height: 14px;
+  left: 0px;
+  top: 74px;
+  width: 71px;
+}
+
+.homepage .items-that-i-ordered-xAwZEq {
+  background-color: transparent;
+  height: auto;
+  left: 0px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 0px;
+  width: 313px;
+}
+
+.homepage .ui-designer-xAwZEq {
+  top: 163px;
+}
+
+.homepage .suzan-b-xAwZEq {
+  background-color: transparent;
+  color: var(--gravel);
+  font-family: var(--font-family-volkhov);
+  font-size: 23.9px;
+  font-style: normal;
+  font-weight: 400;
+  height: auto;
+  left: -0px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 123px;
+  width: auto;
+}
+
+.homepage .separator-xAwZEq {
+  background-color: var(--gravel);
+  height: 1px;
+  left: -0px;
+  position: absolute;
+  top: 111px;
+  width: 172px;
+}
+
+.homepage .image-aKJAGq {
+  height: 196px;
+  left: 37px;
+  top: 52px;
+  width: 197px;
+}
+
+.homepage .bg-goFERh {
+  background-color: var(--alto);
+  height: 181px;
+  left: -0px;
+  position: absolute;
+  top: 15px;
+  width: 181px;
+}
+
+.homepage .image-goFERh {
+  height: 181px;
+  left: 16px;
+  top: 0px;
+  width: 181px;
+}
+
+.homepage .card-5x680H {
+  height: 400px;
+  left: 528px;
+  top: 275px;
+  width: 864px;
+}
+
+.homepage .bg-ZUwRz1 {
+  background-color: var(--white);
+  border-radius: 10px;
+  box-shadow: 0px 20px 60px #2d213c14;
+  height: 400px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 864px;
+}
+
+.homepage .data-ZUwRz1 {
+  height: 242px;
+  left: 395px;
+  top: 69px;
+  width: 425px;
+}
+
+.homepage .stars-8y7fbV {
+  height: 19px;
+  left: 0px;
+  top: 99px;
+  width: 95px;
+}
+
+.homepage .you-wont-regret-it-i-8y7fbV {
+  background-color: transparent;
+  height: auto;
+  left: 0px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 0px;
+  width: 419px;
+}
+
+.homepage .traveler-8y7fbV {
+  background-color: transparent;
+  height: auto;
+  left: 0px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 218px;
+  width: auto;
+}
+
+.homepage .james-k-8y7fbV {
+  background-color: transparent;
+  color: var(--gravel);
+  font-family: var(--font-family-volkhov);
+  font-size: var(--font-size-xxxl);
+  font-style: normal;
+  font-weight: 400;
+  height: auto;
+  left: 0px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 164px;
+  width: auto;
+}
+
+.homepage .separator-8y7fbV {
+  background-color: var(--gravel);
+  height: 1px;
+  left: 0px;
+  position: absolute;
+  top: 148px;
+  width: 230px;
+}
+
+.homepage .image-ZUwRz1 {
+  height: 262px;
+  left: 49px;
+  top: 69px;
+  width: 263px;
+}
+
+.homepage .bg-LEQQXo {
+  background-color: var(--alto);
+  height: 242px;
+  left: 0px;
+  position: absolute;
+  top: 20px;
+  width: 242px;
+}
+
+.homepage .image-LEQQXo {
+  height: 242px;
+  left: 21px;
+  top: 0px;
+  width: 242px;
+}
+
+.homepage .arrows-L773TV {
+  left: 904px;
+  top: 734px;
+}
+
+.homepage .arrow-F3a98v {
+  left: 0px;
+  transform: rotate(180.00deg);
+}
+
+.homepage .ellipse-4-mfHlQx {
+  left: 0px;
+  top: 0px;
+}
+
+.homepage .line-mfHlQx {
+  transform: rotate(-180.00deg);
+}
+
+.homepage .arrow-BYxKFC {
+  left: 64px;
+}
+
+.homepage .ellipse-4-aKXpmE {
+  left: -0px;
+  top: -0px;
+}
+
+.homepage .gallery-zYNucu {
+  background-color: transparent;
+  height: 611px;
+  left: 0px;
+  position: absolute;
+  top: 4634px;
+  width: 1920px;
+}
+
+.homepage .image-IYme16 {
+  height: 380px;
+  left: 0px;
+  top: 231px;
+  width: 1920px;
+}
+
+.homepage .image-UkiVBR {
+  height: 308px;
+  left: 0px;
+  top: 36px;
+  width: 320px;
+}
+
+.homepage .image-b8PAfZ {
+  height: 308px;
+  left: 1600px;
+  top: 36px;
+  width: 320px;
+}
+
+.homepage .image-ZI4J9D {
+  height: 380px;
+  left: 320px;
+  top: 0px;
+  width: 256px;
+}
+
+.homepage .image-Go6OBH {
+  height: 380px;
+  left: 832px;
+  object-fit: cover;
+  top: 0px;
+  width: 256px;
+}
+
+.homepage .image-lefD8E {
+  height: 380px;
+  left: 1344px;
+  top: 0px;
+  width: 256px;
+}
+
+.homepage .image-2SrNuS {
+  height: 308px;
+  left: 576px;
+  object-fit: cover;
+  top: 36px;
+  width: 256px;
+}
+
+.homepage .image-q6yBPT {
+  height: 308px;
+  left: 1088px;
+  object-fit: cover;
+  top: 36px;
+  width: 256px;
+}
+
+.homepage .title-text-IYme16 {
+  height: 131px;
+  left: 653px;
+  top: 0px;
+  width: 618px;
+}
+
+.homepage .lorem-ipsum-dolor-si-qRp2K5 {
+  left: 0px;
+  line-height: 26px;
+  text-align: center;
+  top: 79px;
+  width: 614px;
+}
+
+.homepage .follow-us-on-instagram-qRp2K5 {
+  background-color: transparent;
+  height: auto;
+  left: 39px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 0px;
+  width: auto;
+}
+
+.homepage .features-zYNucu {
+  height: 200px;
+  left: 0px;
+  top: 4284px;
+  width: 1920px;
+}
+
+.homepage .bg-qrJHix {
+  background-color: var(--white);
+  border-radius: 5px;
+  box-shadow: 0px 20px 52.288875579833984px #4444440a;
+  height: 200px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 1920px;
+}
+
+.homepage .features-qrJHix {
+  height: 56px;
+  left: 320px;
+  top: 72px;
+  width: 1281px;
+}
+
+.homepage .feature-36Snsl {
+  left: 0px;
+  width: 277px;
+}
+
+.homepage .text-JWQVAs {
+  height: 56px;
+  left: 64px;
+  top: 0px;
+  width: 217px;
+}
+
+.homepage .high-quality-HeYAJI {
+  background-color: transparent;
+  height: auto;
+  left: 0px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 0px;
+  width: auto;
+}
+
+.homepage .crafted-from-top-materials-HeYAJI {
+  background-color: transparent;
+  height: auto;
+  left: 0px;
+  letter-spacing: 0.00px;
+  line-height: 26px;
+  position: absolute;
+  text-align: left;
+  top: 30px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.homepage .icon-JWQVAs {
+  background-color: transparent;
+  height: 50px;
+  left: 0px;
+  position: absolute;
+  top: 3px;
+  width: 51px;
+}
+
+.homepage .feature-Wp3fEe {
+  left: 393px;
+  width: 246px;
+}
+
+.homepage .text-8ouDiV {
+  height: 56px;
+  left: 51px;
+  top: 0px;
+  width: 199px;
+}
+
+.homepage .warrany-protection-lxuvXP {
+  background-color: transparent;
+  height: auto;
+  left: 0px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 0px;
+  width: auto;
+}
+
+.homepage .over-2-years-lxuvXP {
+  background-color: transparent;
+  height: auto;
+  left: 0px;
+  letter-spacing: 0.00px;
+  line-height: 26px;
+  position: absolute;
+  text-align: left;
+  top: 30px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.homepage .icon-8ouDiV {
+  background-color: transparent;
+  height: 50px;
+  left: 0px;
+  position: absolute;
+  top: 3px;
+  width: 38px;
+}
+
+.homepage .feature-NZCS7E {
+  left: 755px;
+  width: 197px;
+}
+
+.homepage .text-8Kpdeb {
+  height: 56px;
+  left: 59px;
+  top: 0px;
+  width: 142px;
+}
+
+.homepage .free-shipping-yC0eUD {
+  background-color: transparent;
+  height: auto;
+  left: 0px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 0px;
+  width: auto;
+}
+
+.homepage .order-over-150-yC0eUD {
+  background-color: transparent;
+  height: auto;
+  left: 0px;
+  letter-spacing: 0.00px;
+  line-height: 26px;
+  position: absolute;
+  text-align: left;
+  top: 30px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.homepage .vector-8Kpdeb {
+  height: 50px;
+  left: 0px;
+  top: 3px;
+  width: 46px;
+}
+
+.homepage .feature-3URxp4 {
+  left: 1068px;
+  width: 213px;
+}
+
+.homepage .text-HsFPi4 {
+  height: 56px;
+  left: 63px;
+  top: 0px;
+  width: 154px;
+}
+
+.homepage .x24-7-support-Rxfn5j {
+  background-color: transparent;
+  height: auto;
+  left: 0px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 0px;
+  width: auto;
+}
+
+.homepage .dedicated-support-Rxfn5j {
+  background-color: transparent;
+  height: auto;
+  left: 0px;
+  letter-spacing: 0.00px;
+  line-height: 26px;
+  position: absolute;
+  text-align: left;
+  top: 30px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.homepage .x2891214031638194523-1-HsFPi4 {
+  background-color: transparent;
+  height: 50px;
+  left: 0px;
+  position: absolute;
+  top: 3px;
+  width: 50px;
+}
+
+.homepage .slider-zYNucu {
+  height: 570px;
+  left: 0px;
+  top: 3714px;
+  width: 1920px;
+}
+
+.homepage .text-Ap9U61 {
+  height: 570px;
+  left: 802px;
+  top: 0px;
+  width: 1118px;
+}
+
+.homepage .bg-vezJHx {
+  background-color: transparent;
+  height: 570px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 1118px;
+}
+
+.homepage .title-text-vezJHx {
+  height: 449px;
+  left: 282px;
+  top: 60px;
+  width: 525px;
+}
+
+.homepage .button-gXUcOT {
+  left: 0px;
+  top: 393px;
+  width: 209px;
+}
+
+.homepage .bg-wgzW4P {
+  background-color: var(--black);
+  border-radius: 10px;
+  box-shadow: 0px 20px 35px #00000026;
+  height: 56px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 207px;
+}
+
+.homepage .buy-now-wgzW4P {
+  text-align: left;
+}
+
+.homepage .x10000-gXUcOT {
+  background-color: transparent;
+  color: var(--black);
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-xxl);
+  font-style: normal;
+  font-weight: 500;
+  height: auto;
+  left: 0px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 331px;
+  width: auto;
+}
+
+.homepage .span0-5JqBbk {
+  font-style: normal;
+}
+
+.homepage .span1-5JqBbk {
+  font-size: var(--font-size-xl);
+  font-style: normal;
+}
+
+.homepage .size-gXUcOT {
+  height: 28px;
+  top: 283px;
+  width: 104px;
+}
+
+.homepage .m-xbcjlx {
+  height: 28px;
+  left: 49px;
+  top: 0px;
+  width: 55px;
+}
+
+.homepage .bg-vllp27 {
+  background-color: var(--black);
+  border-radius: 10px;
+  height: 28px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 53px;
+}
+
+.homepage .m-vllp27 {
+  height: auto;
+  left: 20px;
+  letter-spacing: 0.00px;
+  line-height: 16px;
+  text-align: left;
+  top: 6px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.homepage .size-xbcjlx {
+  height: auto;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  text-align: left;
+  top: 2px;
+  width: auto;
+}
+
+.homepage .lorem-ipsum-dolor-si-gXUcOT {
+  left: 0px;
+  line-height: normal;
+  text-align: left;
+  top: 167px;
+  width: 515px;
+}
+
+.homepage .description-gXUcOT {
+  background-color: transparent;
+  height: auto;
+  left: 0px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  text-decoration: underline;
+  top: 123px;
+  width: auto;
+}
+
+.homepage .peaky-blinders-gXUcOT {
+  background-color: transparent;
+  height: auto;
+  left: 0px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 44px;
+  width: auto;
+}
+
+.homepage .women-collection-gXUcOT {
+  background-color: transparent;
+  height: auto;
+  left: 0px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 0px;
+  width: auto;
+}
+
+.homepage .image-Ap9U61 {
+  height: 570px;
+  left: 0px;
+  top: 0px;
+  width: 1055px;
+}
+
+.homepage .bg-mmCFFt {
+  background-color: transparent;
+  height: 570px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 1055px;
+}
+
+.homepage .image-mmCFFt {
+  height: 570px;
+  left: 175px;
+  top: 0px;
+  width: 722px;
+}
+
+.homepage .points-mmCFFt {
+  background-color: transparent;
+  height: 528px;
+  left: 158px;
+  position: absolute;
+  top: 19px;
+  width: 586px;
+}
+
+.homepage .point-QndvRc {
+  background-color: transparent;
+  height: 75px;
+  left: 356px;
+  position: absolute;
+  top: 0px;
+  width: 230px;
+}
+
+.homepage .text-6m2nZm {
+  height: 39px;
+  left: 105px;
+  top: 36px;
+  width: 127px;
+}
+
+.homepage .bg-dpS4kr {
+  -webkit-backdrop-filter: blur(12px) brightness(100%);
+  backdrop-filter: blur(12px) brightness(100%);
+  background-color: var(--white-2);
+  border: 1px solid;
+  border-color: var(--black);
+  height: 39px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 125px;
+}
+
+.homepage .flat-cap-dpS4kr {
+  background-color: transparent;
+  height: auto;
+  left: 29px;
+  letter-spacing: 0.00px;
+  line-height: 26px;
+  position: absolute;
+  text-align: center;
+  top: 7px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.homepage .point-6m2nZm {
+  background-color: transparent;
+  height: 30px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 104px;
+}
+
+.homepage .point-Hbex9N {
+  background-color: transparent;
+  height: 20px;
+  left: 24px;
+  position: absolute;
+  top: 10px;
+  width: 80px;
+}
+
+.homepage .point-toVQpP {
+  -webkit-backdrop-filter: blur(20px) brightness(100%);
+  backdrop-filter: blur(20px) brightness(100%);
+  background-color: var(--white-3);
+  border: 1px solid;
+  border-color: var(--black);
+  border-radius: 10.5px;
+  height: 21px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 21px;
+}
+
+.homepage .point-xsxvM6 {
+  background-color: transparent;
+  height: 75px;
+  left: 309px;
+  position: absolute;
+  top: 181px;
+  width: 230px;
+}
+
+.homepage .text-44G7lJ {
+  height: 39px;
+  left: 105px;
+  top: 36px;
+  width: 127px;
+}
+
+.homepage .bg-ZXPCOZ {
+  -webkit-backdrop-filter: blur(12px) brightness(100%);
+  backdrop-filter: blur(12px) brightness(100%);
+  background-color: var(--white-2);
+  border: 1px solid;
+  border-color: var(--black);
+  height: 39px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 125px;
+}
+
+.homepage .point-44G7lJ {
+  background-color: transparent;
+  height: 30px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 104px;
+}
+
+.homepage .point-mFcCnz {
+  background-color: transparent;
+  height: 20px;
+  left: 24px;
+  position: absolute;
+  top: 10px;
+  width: 80px;
+}
+
+.homepage .point-Ms469x {
+  -webkit-backdrop-filter: blur(20px) brightness(100%);
+  backdrop-filter: blur(20px) brightness(100%);
+  background-color: var(--white-3);
+  border: 1px solid;
+  border-color: var(--black);
+  border-radius: 10.5px;
+  height: 21px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 21px;
+}
+
+.homepage .point-guK8xk {
+  background-color: transparent;
+  height: 75px;
+  left: 313px;
+  position: absolute;
+  top: 453px;
+  width: 230px;
+}
+
+.homepage .text-s2wazl {
+  height: 39px;
+  left: 105px;
+  top: 36px;
+  width: 127px;
+}
+
+.homepage .bg-ugxKxQ {
+  -webkit-backdrop-filter: blur(12px) brightness(100%);
+  backdrop-filter: blur(12px) brightness(100%);
+  background-color: var(--white-2);
+  border: 1px solid;
+  border-color: var(--black);
+  height: 39px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 125px;
+}
+
+.homepage .santoni-ugxKxQ {
+  background-color: transparent;
+  height: auto;
+  left: 32px;
+  letter-spacing: 0.00px;
+  line-height: 26px;
+  position: absolute;
+  text-align: center;
+  top: 7px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.homepage .point-s2wazl {
+  background-color: transparent;
+  height: 30px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 104px;
+}
+
+.homepage .point-MveNit {
+  background-color: transparent;
+  height: 20px;
+  left: 24px;
+  position: absolute;
+  top: 10px;
+  width: 80px;
+}
+
+.homepage .point-ZLKwP9 {
+  -webkit-backdrop-filter: blur(20px) brightness(100%);
+  backdrop-filter: blur(20px) brightness(100%);
+  background-color: var(--white-3);
+  border: 1px solid;
+  border-color: var(--black);
+  border-radius: 10.5px;
+  height: 21px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 21px;
+}
+
+.homepage .point-VC2oZ2 {
+  background-color: transparent;
+  height: 73px;
+  left: 44px;
+  position: absolute;
+  top: 114px;
+  width: 250px;
+}
+
+.homepage .text-a6ZYMV {
+  height: 39px;
+  left: 0px;
+  top: 34px;
+  width: 127px;
+}
+
+.homepage .bg-5l7LNJ {
+  -webkit-backdrop-filter: blur(12px) brightness(100%);
+  backdrop-filter: blur(12px) brightness(100%);
+  background-color: var(--white-2);
+  border: 1px solid;
+  border-color: var(--black);
+  height: 39px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 125px;
+}
+
+.homepage .suspender-5l7LNJ {
+  background-color: transparent;
+  height: auto;
+  left: 19px;
+  letter-spacing: 0.00px;
+  line-height: 26px;
+  position: absolute;
+  text-align: center;
+  top: 7px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.homepage .point-a6ZYMV {
+  background-color: transparent;
+  height: 30px;
+  left: 85px;
+  position: absolute;
+  top: 0px;
+  transform: rotate(180deg);
+  width: 164px;
+}
+
+.homepage .point-d0V8CF {
+  background-color: transparent;
+  height: 20px;
+  left: 24px;
+  position: absolute;
+  top: -0px;
+  transform: rotate(-180deg);
+  width: 140px;
+}
+
+.homepage .point-PiR4ix {
+  -webkit-backdrop-filter: blur(20px) brightness(100%);
+  backdrop-filter: blur(20px) brightness(100%);
+  background-color: var(--white-3);
+  border: 1px solid;
+  border-color: var(--black);
+  border-radius: 10.5px;
+  height: 21px;
+  left: 0px;
+  position: absolute;
+  top: 10px;
+  width: 21px;
+}
+
+.homepage .point-N5Z5zk {
+  background-color: transparent;
+  height: 73px;
+  left: 0px;
+  position: absolute;
+  top: 280px;
+  width: 250px;
+}
+
+.homepage .text-BcOlZq {
+  height: 39px;
+  left: 0px;
+  top: 34px;
+  width: 127px;
+}
+
+.homepage .bg-YdME5u {
+  -webkit-backdrop-filter: blur(12px) brightness(100%);
+  backdrop-filter: blur(12px) brightness(100%);
+  background-color: var(--white-2);
+  border: 1px solid;
+  border-color: var(--black);
+  height: 39px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 125px;
+}
+
+.homepage .point-BcOlZq {
+  background-color: transparent;
+  height: 30px;
+  left: 85px;
+  position: absolute;
+  top: 0px;
+  transform: rotate(180deg);
+  width: 164px;
+}
+
+.homepage .point-UCVV43 {
+  background-color: transparent;
+  height: 20px;
+  left: 24px;
+  position: absolute;
+  top: -0px;
+  transform: rotate(-180deg);
+  width: 140px;
+}
+
+.homepage .point-7xsMiA {
+  -webkit-backdrop-filter: blur(20px) brightness(100%);
+  backdrop-filter: blur(20px) brightness(100%);
+  background-color: var(--white-3);
+  border: 1px solid;
+  border-color: var(--black);
+  border-radius: 10.5px;
+  height: 21px;
+  left: 0px;
+  position: absolute;
+  top: 10px;
+  width: 21px;
+}
+
+.homepage .separator-Ap9U61 {
+  background-color: var(--black);
+  height: 599px;
+  left: 960px;
+  position: absolute;
+  top: -14px;
+  transform: rotate(18.14deg);
+  width: 2px;
+}
+
+.homepage .new-arrivals-zYNucu {
+  height: 1329px;
+  left: 320px;
+  top: 2235px;
+  width: 1280px;
+}
+
+.homepage .button-OOBmtD {
+  left: 536px;
+  top: 1273px;
+  width: 209px;
+}
+
+.homepage .bg-9Zd2hc {
+  background-color: var(--black);
+  border-radius: 10px;
+  box-shadow: 0px 20px 35px #00000026;
+  height: 56px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 207px;
+}
+
+.homepage .view-more-9Zd2hc {
+  background-color: transparent;
+  height: auto;
+  left: 62px;
+  letter-spacing: 0.00px;
+  line-height: 16px;
+  position: absolute;
+  text-align: center;
+  top: 20px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.homepage .products-OOBmtD {
+  height: 936px;
+  left: 0px;
+  top: 287px;
+  width: 1280px;
+}
+
+.homepage .product-hDxXZZ {
+  left: 0px;
+  top: 0px;
+}
+
+.homepage .stars-dibSOr {
+  height: 19px;
+  left: 241px;
+  top: 6px;
+  width: 95px;
+}
+
+.homepage .name-brand-dibSOr {
+  width: 120px;
+}
+
+.homepage .shiny-dress-MxDSpx {
+  background-color: transparent;
+  height: auto;
+  left: 0px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 0px;
+  width: auto;
+}
+
+.homepage .images-QNxLf9 {
+  height: 244px;
+  left: 25px;
+  top: 15px;
+  width: 336px;
+}
+
+.homepage .product-JEHKlH {
+  left: 0px;
+  top: 498px;
+}
+
+.homepage .stars-4892Xj {
+  height: 19px;
+  left: 241px;
+  top: 6px;
+  width: 95px;
+}
+
+.homepage .name-brand-4892Xj {
+  width: 123px;
+}
+
+.homepage .white-dress-43l2pL {
+  background-color: transparent;
+  height: auto;
+  left: 0px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 0px;
+  width: auto;
+}
+
+.homepage .images-n73dOd {
+  height: 244px;
+  left: 25px;
+  object-fit: cover;
+  top: 15px;
+  width: 336px;
+}
+
+.homepage .product-mB18W0 {
+  left: 447px;
+  top: 0px;
+}
+
+.homepage .stars-iY4EW6 {
+  height: 19px;
+  left: 241px;
+  top: 6px;
+  width: 95px;
+}
+
+.homepage .name-brand-iY4EW6 {
+  width: 113px;
+}
+
+.homepage .long-dress-BVSFK7 {
+  background-color: transparent;
+  height: auto;
+  left: 0px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 0px;
+  width: auto;
+}
+
+.homepage .images-KpmnOl {
+  height: 244px;
+  left: 25px;
+  top: 15px;
+  width: 336px;
+}
+
+.homepage .product-Za4fqI {
+  left: 447px;
+  top: 498px;
+}
+
+.homepage .stars-h51RVY {
+  height: 19px;
+  left: 241px;
+  top: 6px;
+  width: 95px;
+}
+
+.homepage .name-brand-h51RVY {
+  width: 144px;
+}
+
+.homepage .colorful-dress-QjbhxV {
+  background-color: transparent;
+  height: auto;
+  left: 0px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 0px;
+  width: auto;
+}
+
+.homepage .images-r2MPxW {
+  height: 244px;
+  left: 25px;
+  top: 15px;
+  width: 336px;
+}
+
+.homepage .product-WPxFXb {
+  left: 894px;
+  top: 0px;
+}
+
+.homepage .stars-b9pz5P {
+  height: 19px;
+  left: 241px;
+  top: 6px;
+  width: 95px;
+}
+
+.homepage .name-brand-b9pz5P {
+  width: 125px;
+}
+
+.homepage .full-sweater-jFH24r {
+  background-color: transparent;
+  height: auto;
+  left: 0px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 0px;
+  width: auto;
+}
+
+.homepage .images-Hxmx2v {
+  height: 244px;
+  left: 25px;
+  top: 15px;
+  width: 336px;
+}
+
+.homepage .product-yVS4px {
+  left: 894px;
+  top: 498px;
+}
+
+.homepage .stars-6dTLyx {
+  height: 19px;
+  left: 241px;
+  top: 6px;
+  width: 95px;
+}
+
+.homepage .name-brand-6dTLyx {
+  width: 113px;
+}
+
+.homepage .white-shirt-DF9EwW {
+  background-color: transparent;
+  height: auto;
+  left: 0px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 0px;
+  width: auto;
+}
+
+.homepage .images-rl0U5x {
+  height: 244px;
+  left: 25px;
+  top: 15px;
+  width: 336px;
+}
+
+.homepage .categories-OOBmtD {
+  background-color: transparent;
+  height: 56px;
+  left: 62px;
+  position: absolute;
+  top: 181px;
+  width: 1155px;
+}
+
+.homepage .category-32E0W1 {
+  left: 0px;
+}
+
+.homepage .bg-WI8NxZ {
+  background-color: var(--alabaster);
+  border-radius: 10px;
+  height: 56px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 207px;
+}
+
+.homepage .mens-fashion-WI8NxZ {
+  background-color: transparent;
+  height: auto;
+  left: 47px;
+  letter-spacing: 0.00px;
+  line-height: 16px;
+  position: absolute;
+  text-align: center;
+  top: 20px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.homepage .category-W2cUzu {
+  left: 237px;
+}
+
+.homepage .bg-ajroGi {
+  background-color: var(--black);
+  border-radius: 10px;
+  box-shadow: 0px 20px 35px #00000026;
+  height: 56px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 207px;
+}
+
+.homepage .womens-fashion-ajroGi {
+  background-color: transparent;
+  height: auto;
+  left: 33px;
+  letter-spacing: 0.00px;
+  line-height: 16px;
+  position: absolute;
+  text-align: center;
+  top: 20px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.homepage .category-RnnREJ {
+  left: 474px;
+}
+
+.homepage .bg-e99hmM {
+  background-color: var(--alabaster);
+  border-radius: 10px;
+  height: 56px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 207px;
+}
+
+.homepage .women-accessories-e99hmM {
+  background-color: transparent;
+  height: auto;
+  left: 22px;
+  letter-spacing: 0.00px;
+  line-height: 16px;
+  position: absolute;
+  text-align: center;
+  top: 20px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.homepage .category-jHdqPc {
+  left: 711px;
+}
+
+.homepage .bg-RWoVag {
+  background-color: var(--alabaster);
+  border-radius: 10px;
+  height: 56px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 207px;
+}
+
+.homepage .men-accessories-RWoVag {
+  background-color: transparent;
+  height: auto;
+  left: 36px;
+  letter-spacing: 0.00px;
+  line-height: 16px;
+  position: absolute;
+  text-align: center;
+  top: 20px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.homepage .category-xy9PL8 {
+  left: 948px;
+}
+
+.homepage .bg-Ah3gbv {
+  background-color: var(--alabaster);
+  border-radius: 10px;
+  height: 56px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 207px;
+}
+
+.homepage .discount-deals-Ah3gbv {
+  background-color: transparent;
+  height: auto;
+  left: 44px;
+  letter-spacing: 0.00px;
+  line-height: 16px;
+  position: absolute;
+  text-align: center;
+  top: 20px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.homepage .title-text-OOBmtD {
+  height: 131px;
+  left: 333px;
+  top: 0px;
+  width: 618px;
+}
+
+.homepage .lorem-ipsum-dolor-si-fRgxGd {
+  left: 0px;
+  line-height: 26px;
+  text-align: center;
+  top: 79px;
+  width: 614px;
+}
+
+.homepage .new-arrivals-fRgxGd {
+  height: auto;
+  left: 163px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  text-align: center;
+  top: 0px;
+  width: auto;
+}
+
+.homepage .deal-of-the-month-zYNucu {
+  background-color: transparent;
+  height: 782px;
+  left: 0px;
+  position: absolute;
+  top: 1303px;
+  width: 2082px;
+}
+
+.homepage .bg-i3zxnR {
+  background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(250.00000029802322, 250.00000029802322, 250.00000029802322) 100%);
+  background-color: transparent;
+  height: 782px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 1920px;
+}
+
+.homepage .products-i3zxnR {
+  height: 582px;
+  left: 750px;
+  top: 55px;
+  width: 1332px;
+}
+
+.homepage .image-PtqIYf {
+  height: 582px;
+  left: 136px;
+  top: 0px;
+  width: 404px;
+}
+
+.homepage .image-a2y06x {
+  height: 582px;
+  left: 0px;
+  top: 0px;
+  width: 404px;
+}
+
+.homepage .text-a2y06x {
+  height: 130px;
+  left: 24px;
+  top: 428px;
+  width: 217px;
+}
+
+.homepage .image-gXftdF {
+  height: 486px;
+  left: 564px;
+  top: 0px;
+  width: 372px;
+}
+
+.homepage .image-iZpPUt {
+  height: 486px;
+  left: 960px;
+  top: 0px;
+  width: 210px;
+}
+
+.homepage .slider-PtqIYf {
+  align-items: center;
+  display: inline-flex;
+  gap: 20px;
+  left: 564px;
+  top: 555px;
+}
+
+.homepage .active-IemnIK {
+  background-color: transparent;
+  height: 27px;
+  position: relative;
+  width: 27px;
+}
+
+.homepage .ellipse-2-9l4CQP {
+  background-color: transparent;
+  border: 1px solid;
+  border-color: var(--black);
+  border-radius: 13.5px;
+  height: 27px;
+  left: 0px;
+  opacity: 0.7;
+  position: absolute;
+  top: 0px;
+  width: 27px;
+}
+
+.homepage .ellipse-1-9l4CQP {
+  background-color: var(--black);
+  border: 1px solid;
+  border-color: var(--black);
+  left: 8px;
+  position: absolute;
+  top: 8px;
+}
+
+.homepage .ellipse-1-IemnIK {
+  background-color: var(--nobel);
+  position: relative;
+}
+
+.homepage .ellipse-2-IemnIK {
+  background-color: var(--nobel);
+  border-radius: 5.5px;
+  height: 11px;
+  position: relative;
+  width: 11px;
+}
+
+.homepage .ellipse-3-IemnIK {
+  background-color: var(--nobel);
+  border-radius: 5.5px;
+  height: 11px;
+  position: relative;
+  width: 11px;
+}
+
+.homepage .arrows-PtqIYf {
+  left: 0px;
+  top: 534px;
+}
+
+.homepage .arrow-EdBvG9 {
+  left: 0px;
+  transform: rotate(180.00deg);
+}
+
+.homepage .ellipse-4-daJ0u9 {
+  left: 0px;
+  top: 0px;
+}
+
+.homepage .line-daJ0u9 {
+  transform: rotate(-180.00deg);
+}
+
+.homepage .arrow-JuoTYW {
+  left: 64px;
+}
+
+.homepage .ellipse-4-d59JHL {
+  left: -0px;
+  top: -0px;
+}
+
+.homepage .timer-i3zxnR {
+  height: 177px;
+  left: 320px;
+  top: 358px;
+  width: 396px;
+}
+
+.homepage .timer-0mwIat {
+  height: 120px;
+  left: 0px;
+  top: 57px;
+  width: 394px;
+}
+
+.homepage .days-6y7NQm {
+  height: 120px;
+  left: 0px;
+  top: 0px;
+  width: 78px;
+}
+
+.homepage .group-4337-xG7kms {
+  background-color: transparent;
+  height: 76px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 78px;
+}
+
+.homepage .rectangle-19257-e31EBY {
+  background-color: var(--white);
+  border-radius: 10px;
+  box-shadow: 0px 4px 14px 1px #00000029;
+  height: 76px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 76px;
+}
+
+.homepage .x02-e31EBY {
+  background-color: transparent;
+  height: auto;
+  left: 12px;
+  letter-spacing: 0.00px;
+  line-height: 32px;
+  position: absolute;
+  text-align: left;
+  top: 22px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.homepage .days-xG7kms {
+  height: auto;
+  left: 8px;
+  letter-spacing: 0.00px;
+  line-height: 28.8px;
+  text-align: center;
+  top: 91px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.homepage .hr-6y7NQm {
+  height: 120px;
+  left: 106px;
+  top: 0px;
+  width: 78px;
+}
+
+.homepage .group-4338-xipZri {
+  background-color: transparent;
+  height: 76px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 78px;
+}
+
+.homepage .rectangle-19258-b0SXFD {
+  background-color: var(--white);
+  border-radius: 10px;
+  box-shadow: 0px 4px 14px 1px #00000029;
+  height: 76px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 76px;
+}
+
+.homepage .x06-b0SXFD {
+  background-color: transparent;
+  height: auto;
+  left: 12px;
+  letter-spacing: 0.00px;
+  line-height: 32px;
+  position: absolute;
+  text-align: left;
+  top: 22px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.homepage .hr-xipZri {
+  height: auto;
+  left: 25px;
+  letter-spacing: 0.00px;
+  line-height: 28.8px;
+  text-align: center;
+  top: 91px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.homepage .sec-6y7NQm {
+  height: 120px;
+  left: 318px;
+  top: 0px;
+  width: 78px;
+}
+
+.homepage .group-4340-LvcoNm {
+  background-color: transparent;
+  height: 76px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 78px;
+}
+
+.homepage .rectangle-19260-glMrZG {
+  background-color: var(--white);
+  border-radius: 10px;
+  box-shadow: 0px 4px 14px 1px #00000029;
+  height: 76px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 76px;
+}
+
+.homepage .x30-glMrZG {
+  background-color: transparent;
+  height: auto;
+  left: 12px;
+  letter-spacing: 0.00px;
+  line-height: 32px;
+  position: absolute;
+  text-align: left;
+  top: 22px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.homepage .sec-LvcoNm {
+  height: auto;
+  left: 16px;
+  letter-spacing: 0.00px;
+  line-height: 28.8px;
+  text-align: center;
+  top: 91px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.homepage .mins-6y7NQm {
+  height: 120px;
+  left: 212px;
+  top: 0px;
+  width: 78px;
+}
+
+.homepage .group-4339-0VxFrW {
+  background-color: transparent;
+  height: 76px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 78px;
+}
+
+.homepage .rectangle-19259-3oR2Tr {
+  background-color: var(--white);
+  border-radius: 10px;
+  box-shadow: 0px 4px 14px 1px #00000029;
+  height: 76px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 76px;
+}
+
+.homepage .x05-3oR2Tr {
+  background-color: transparent;
+  height: auto;
+  left: 12px;
+  letter-spacing: 0.00px;
+  line-height: 32px;
+  position: absolute;
+  text-align: left;
+  top: 22px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.homepage .mins-0VxFrW {
+  height: auto;
+  left: 13px;
+  letter-spacing: 0.00px;
+  line-height: 28.8px;
+  text-align: center;
+  top: 91px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.homepage .hurry-before-its-too-late-0mwIat {
+  background-color: transparent;
+  color: var(--gravel);
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-xxl);
+  font-style: normal;
+  font-weight: 500;
+  height: auto;
+  left: 0px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 0px;
+  width: auto;
+}
+
+.homepage .text-button-i3zxnR {
+  height: 253px;
+  left: 320px;
+  top: 55px;
+  width: 444px;
+}
+
+.homepage .button-IpJUK5 {
+  left: 0px;
+  top: 197px;
+  width: 209px;
+}
+
+.homepage .bg-06NO1Z {
+  background-color: var(--black);
+  border-radius: 10px;
+  box-shadow: 0px 20px 35px #00000026;
+  height: 56px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 207px;
+}
+
+.homepage .buy-now-06NO1Z {
+  text-align: center;
+}
+
+.homepage .title-text-IpJUK5 {
+  height: 157px;
+  left: 0px;
+  top: 0px;
+  width: 448px;
+}
+
+.homepage .lorem-ipsum-dolor-si-Z40qxA {
+  left: 0px;
+  line-height: 26px;
+  text-align: left;
+  top: 79px;
+  width: 436px;
+}
+
+.homepage .deals-of-the-month-Z40qxA {
+  background-color: transparent;
+  height: auto;
+  left: 0px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 0px;
+  width: auto;
+}
+
+.homepage .logos-zYNucu {
+  height: 200px;
+  left: 0px;
+  top: 1003px;
+  width: 1920px;
+}
+
+.homepage .bg-8ccAJo {
+  background-color: var(--white);
+  border-radius: 5px;
+  box-shadow: 0px 20px 52.288875579833984px #4444440a;
+  height: 200px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 1920px;
+}
+
+.homepage .logos-8ccAJo {
+  height: 36px;
+  left: 320px;
+  top: 82px;
+  width: 1280px;
+}
+
+.homepage .logo-vd1o5s {
+  height: 27px;
+  left: 1096px;
+  top: 3px;
+  width: 184px;
+}
+
+.homepage .logo-3tGyIx {
+  height: 32px;
+  left: 540px;
+  object-fit: cover;
+  top: 0px;
+  width: 196px;
+}
+
+.homepage .logo-77jgKJ {
+  height: 33px;
+  left: 0px;
+  object-fit: cover;
+  top: 3px;
+  width: 196px;
+}
+
+.homepage .logo-xWT90F {
+  height: 25px;
+  left: 266px;
+  object-fit: cover;
+  top: 7px;
+  width: 196px;
+}
+
+.homepage .logo-RwT0Fx {
+  height: 33px;
+  left: 808px;
+  top: 0px;
+  width: 196px;
+}
+
+.homepage .header-zYNucu {
+  background-color: transparent;
+  height: 906px;
+  left: 320px;
+  position: absolute;
+  top: 70px;
+  width: 1280px;
+}
+
+.homepage .images-num0gs {
+  height: 150px;
+  left: 427px;
+  top: 756px;
+  width: 426px;
+}
+
+.homepage .images-LynBye {
+  height: 150px;
+  left: 427px;
+  top: 150px;
+  width: 426px;
+}
+
+.homepage .text-button-num0gs {
+  height: 383px;
+  left: 441px;
+  top: 336px;
+  width: 401px;
+}
+
+.homepage .sale-6ppo3C {
+  background-color: transparent;
+  height: 187px;
+  left: 0px;
+  position: absolute;
+  top: 91px;
+  width: 396px;
+}
+
+.homepage .title-N4qMMx {
+  -webkit-text-stroke: 1px var(--gravel);
+  background-color: transparent;
+  color: transparent;
+  font-family: var(--font-family-poppins);
+  font-size: 187px;
+  font-style: normal;
+  font-weight: 500;
+  height: auto;
+  left: -1px;
+  letter-spacing: -10.29px;
+  line-height: 187px;
+  position: absolute;
+  text-align: center;
+  top: -1px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.homepage .ultimate-6ppo3C {
+  height: 91px;
+  left: 3px;
+  width: 398px;
+}
+
+.homepage .ultimate-LBYzPj {
+  color: var(--gravel);
+  font-family: var(--font-family-poppins);
+  font-size: 91px;
+  font-style: normal;
+  font-weight: 500;
+  height: auto;
+  left: 0px;
+  letter-spacing: -3.64px;
+  line-height: 91px;
+  text-align: center;
+  white-space: nowrap;
+  width: auto;
+}
+
+.homepage .new-collection-6ppo3C {
+  background-color: transparent;
+  color: var(--gravel);
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-l);
+  font-style: normal;
+  font-weight: 400;
+  height: auto;
+  left: 101px;
+  letter-spacing: 2.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 278px;
+  width: auto;
+}
+
+.homepage .button-6ppo3C {
+  left: 94px;
+  top: 327px;
+  width: 209px;
+}
+
+.homepage .bg-4E1B27 {
+  background-color: var(--black);
+  border-radius: 10px;
+  box-shadow: 0px 20px 35px #00000026;
+  height: 56px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 207px;
+}
+
+.homepage .shop-now-4E1B27 {
+  background-color: transparent;
+  color: var(--white);
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 500;
+  height: auto;
+  left: 59px;
+  letter-spacing: 0.00px;
+  line-height: 16px;
+  position: absolute;
+  text-align: center;
+  top: 20px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.homepage .nav-bar-num0gs {
+  background-color: transparent;
+  height: 56px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 1282px;
+}
+
+.homepage .nav-elements-Y2wPoM {
+  background-color: transparent;
+  height: 56px;
+  left: 516px;
+  position: absolute;
+  top: 0px;
+  width: 774px;
+}
+
+.homepage .button-I1nHt3 {
+  left: 612px;
+  top: 0px;
+  width: 154px;
+}
+
+.homepage .bg-S09mKh {
+  background-color: var(--black);
+  border-radius: 10px;
+  box-shadow: 0px 20px 35px #00000026;
+  height: 56px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 152px;
+}
+
+.homepage .sign-up-S09mKh {
+  background-color: transparent;
+  height: auto;
+  left: 45px;
+  letter-spacing: 0.00px;
+  line-height: 16px;
+  position: absolute;
+  text-align: center;
+  top: 20px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.homepage .sign-in-I1nHt3 {
+  background-color: transparent;
+  height: auto;
+  left: 501px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 17px;
+  width: auto;
+}
+
+.homepage .home-I1nHt3 {
+  background-color: transparent;
+  height: auto;
+  left: 0px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 17px;
+  width: auto;
+}
+
+.homepage .deals-I1nHt3 {
+  background-color: transparent;
+  height: auto;
+  left: 106px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 17px;
+  width: auto;
+}
+
+.homepage .new-arrivals-I1nHt3 {
+  height: auto;
+  left: 209px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  text-align: left;
+  top: 17px;
+  width: auto;
+}
+
+.homepage .packages-I1nHt3 {
+  background-color: transparent;
+  height: auto;
+  left: 365px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 17px;
+  width: auto;
+}
+
+.homepage .fasco-Y2wPoM {
+  font-size: 52px;
+  line-height: 52px;
+  top: 2px;
+}
+
+.homepage .group-1000001796-zYNucu {
+  background-color: transparent;
+  height: 756px;
+  left: 320px;
+  position: absolute;
+  top: 220px;
+  width: 392px;
+}
+
+.homepage .group-1000001797-zYNucu {
+  background-color: transparent;
+  height: 756px;
+  left: 1209px;
+  position: absolute;
+  top: 220px;
+  width: 392px;
+}
+
+.homepage .scroll-zYNucu {
+  background-color: transparent;
+  height: 57px;
+  left: 1823px;
+  position: fixed;
+  top: 919px;
+  width: 57px;
+}
+
+.homepage .bg-6KH0Vx {
+  background-color: transparent;
+  border: 1px solid;
+  border-color: var(--black);
+  border-radius: 50px;
+  height: 57px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 57px;
+}
+
+.homepage .vector-6KH0Vx {
+  height: 26px;
+  left: 20px;
+  top: 16px;
+  width: 17px;
+}
+
+.homepage .icon-zYNucu {
+  background-color: transparent;
+  height: 56px;
+  left: 1732px;
+  position: fixed;
+  top: 920px;
+  width: 56px;
+}
+
+.homepage .icon-rqZgsC {
+  background-color: transparent;
+  height: 56px;
+  left: 0px;
+  position: relative;
+  top: 0px;
+  width: 56px;
+}
+
+.homepage .bg-L3kL4r {
+  background-color: var(--black);
+  border-radius: 10px;
+  box-shadow: 0px 20px 35px #00000026;
+  height: 56px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 56px;
+}
+
+.homepage .icon-L3kL4r {
+  background-color: transparent;
+  height: 22px;
+  left: 15px;
+  position: absolute;
+  top: 17px;
+  width: 23px;
+}
+
+.homepage .al-karam {
+  background-color: transparent;
+  height: auto;
+  left: 0px;
+  letter-spacing: 0.00px;
+  line-height: 12px;
+  position: absolute;
+  text-align: left;
+  top: 31px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.homepage .almost-sold-out {
+  background-color: transparent;
+  height: auto;
+  left: 242px;
+  letter-spacing: -0.12px;
+  line-height: 20px;
+  position: absolute;
+  text-align: right;
+  top: 111px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.homepage .arrow {
+  background-color: transparent;
+  height: 48px;
+  position: absolute;
+  top: 0px;
+  width: 48px;
+}
+
+.homepage .arrows {
+  background-color: transparent;
+  height: 48px;
+  position: absolute;
+  width: 112px;
+}
+
+.homepage .base {
+  background-color: var(--white);
+  border-radius: 10px;
+  box-shadow: 0px 40px 90px #0000000f;
+  height: 438px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 386px;
+}
+
+.homepage .button {
+  background-color: transparent;
+  height: 56px;
+  position: absolute;
+}
+
+.homepage .buy-now {
+  background-color: transparent;
+  height: auto;
+  left: 69px;
+  letter-spacing: 0.00px;
+  line-height: 16px;
+  position: absolute;
+  top: 20px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.homepage .card {
+  background-color: transparent;
+  position: absolute;
+}
+
+.homepage .category {
+  background-color: transparent;
+  height: 56px;
+  position: absolute;
+  top: 0px;
+  width: 209px;
+}
+
+.homepage .data {
+  background-color: transparent;
+  position: absolute;
+}
+
+.homepage .days {
+  background-color: transparent;
+  position: absolute;
+}
+
+.homepage .ellipse-1 {
+  border-radius: 5.5px;
+  height: 11px;
+  width: 11px;
+}
+
+.homepage .ellipse-4 {
+  background-color: var(--white);
+  border-radius: 24px;
+  box-shadow: 0px 4px 14px 1px #00000029;
+  height: 48px;
+  position: absolute;
+  width: 48px;
+}
+
+.homepage .fasco {
+  background-color: transparent;
+  color: var(--gravel);
+  font-family: var(--font-family-volkhov);
+  font-style: normal;
+  font-weight: 400;
+  height: auto;
+  left: 0px;
+  letter-spacing: 0.00px;
+  position: absolute;
+  text-align: left;
+  white-space: nowrap;
+  width: auto;
+}
+
+.homepage .feature {
+  background-color: transparent;
+  height: 56px;
+  position: absolute;
+  top: 0px;
+}
+
+.homepage .features {
+  background-color: transparent;
+  position: absolute;
+}
+
+.homepage .hr {
+  background-color: transparent;
+  position: absolute;
+}
+
+.homepage .hugo-boss {
+  background-color: transparent;
+  height: auto;
+  left: 20px;
+  letter-spacing: 0.00px;
+  line-height: 26px;
+  position: absolute;
+  text-align: center;
+  top: 7px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.homepage .image {
+  background-color: transparent;
+  position: absolute;
+}
+
+.homepage .images {
+  background-color: transparent;
+  position: absolute;
+}
+
+.homepage .line {
+  background-color: transparent;
+  height: 16px;
+  left: 20px;
+  position: absolute;
+  top: 16px;
+  width: 9px;
+}
+
+.homepage .logo {
+  background-color: transparent;
+  position: absolute;
+}
+
+.homepage .logos {
+  background-color: transparent;
+  position: absolute;
+}
+
+.homepage .lorem-ipsum-dolor-si {
+  background-color: transparent;
+  height: auto;
+  letter-spacing: 0.00px;
+  position: absolute;
+}
+
+.homepage .m {
+  background-color: transparent;
+  position: absolute;
+}
+
+.homepage .mins {
+  background-color: transparent;
+  position: absolute;
+}
+
+.homepage .name-brand {
+  background-color: transparent;
+  height: 43px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+}
+
+.homepage .new-arrivals {
+  background-color: transparent;
+  position: absolute;
+}
+
+.homepage .product {
+  background-color: transparent;
+  height: 438px;
+  position: absolute;
+  width: 386px;
+}
+
+.homepage .products {
+  background-color: transparent;
+  position: absolute;
+}
+
+.homepage .sec {
+  background-color: transparent;
+  position: absolute;
+}
+
+.homepage .size {
+  background-color: transparent;
+  left: 0px;
+  position: absolute;
+}
+
+.homepage .slider {
+  background-color: transparent;
+  position: absolute;
+}
+
+.homepage .stars {
+  background-color: transparent;
+  position: absolute;
+}
+
+.homepage .text {
+  background-color: transparent;
+  position: absolute;
+}
+
+.homepage .text-button {
+  background-color: transparent;
+  position: absolute;
+}
+
+.homepage .texts {
+  background-color: transparent;
+  height: 131px;
+  left: 25px;
+  position: absolute;
+  top: 271px;
+  width: 342px;
+}
+
+.homepage .timer {
+  background-color: transparent;
+  position: absolute;
+}
+
+.homepage .title-text {
+  background-color: transparent;
+  position: absolute;
+}
+
+.homepage .ui-designer {
+  background-color: transparent;
+  height: auto;
+  left: -0px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  width: auto;
+}
+
+.homepage .ultimate {
+  background-color: transparent;
+  position: absolute;
+  top: 0px;
+}
+
+.homepage .vector {
+  background-color: transparent;
+  position: absolute;
+}
+
+.homepage .x41k-customer-reviews {
+  background-color: transparent;
+  height: auto;
+  left: 0px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 68px;
+  width: auto;
+}
+
+.homepage .x9550 {
+  background-color: transparent;
+  height: auto;
+  left: 0px;
+  letter-spacing: -0.24px;
+  line-height: 20px;
+  position: absolute;
+  text-align: left;
+  top: 111px;
+  white-space: nowrap;
+  width: auto;
+}
+</style>
+	
+	
+	<style id="action-links-styles">
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
+#interface{
+  transition: all 0.5s ease-in-out;
+}
+
+#watermark {
+  transition: all 0.5s ease-in-out;
+  display: none;
+}
+#watermark-link{
+  position: fixed;
+  bottom:20px;
+  height:30px;
+  border-radius: 1000px;
+  background: #3B3B3B;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  cursor:pointer;
+  user-select:none;
+  transition: width 0.25s cubic-bezier(0.175, 0.885, 0.320, 1.275);
+  text-decoration:none;
+  color:#fff;
+  padding:8px 16px 8px 11px;
+  font-family:Mulish, sans-serif;
+  font-size:12px;
+}
+#watermark-link .text {
+  margin-left: 6px;
+}
+
+.omniview-action-links .link{
+  height: 30px;
+  width: 30px;
+  border-radius: 1000px;
+  background: #3B3B3B;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  cursor:pointer;
+  user-select:none;
+  transition: width 0.25s cubic-bezier(0.175, 0.885, 0.320, 1.275);
+  text-decoration:none;
+  color:#fff;
+}
+.omniview-action-links #comment-link .text,.omniview-action-links #code-link .text{
+  display:none;
+  font-size:12px;
+  margin-right:5px;
+}
+.omniview-action-links #comment-link:hover,.omniview-action-links #code-link:hover{
+  width:105px;
+}
+.omniview-action-links #comment-link.pop-active,.omniview-action-links #code-link.pop-active{
+  width:105px;
+  background: #FF6250;
+}
+.omniview-action-links #comment-link.pop-active .text,.omniview-action-links #code-link.pop-active .text{
+  display:block
+}
+.omniview-action-links #comment-link:hover .text,.omniview-action-links #code-link:hover .text{
+  display:block;
+}
+
+.link.navigation{
+  position:fixed;
+  left:50%;
+  transform:translateX(-50%);
+  width:auto;
+  height:32px;
+  color:#fff;
+  font-size:12px;
+  cursor:default;
+  padding:0 5px;
+}
+.link.navigation .icon{
+  margin:0 6px;
+  fill:none;
+  stroke:currentColor;
+  cursor:pointer;
+}
+.link.navigation .icon.disabled{
+  opacity:0.5;
+  cursor:default;
+}
+
+
+.link.navigation .home-icon{
+  margin-left:6px;
+  fill:currentColor;
+  stroke:currentColor;
+  cursor:pointer;
+}
+
+.omniview-action-links .restart{
+  height: 30px;
+  padding:0 12px;
+  background: #3B3B3B;
+  border-radius: 1000px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  cursor:pointer;
+  color:#f1f1f1;
+  font-size: 12px;
+}
+
+.omniview-action-links{
+  display:flex;
+  align-items:center;
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  font-family:Mulish, sans-serif;
+  transition: all 0.5s ease-in-out;
+  opacity:1;
+}
+
+.omniview-action-links > * + *{
+   margin-right: 0;
+   margin-left: 10px;
+}
+
+.idle{
+  opacity:0;
+  pointer-events:none;
+}
+
+#popoverOpener {
+  position: absolute;
+  left: 50%;
+  margin-left: -10vw;
+  text-align: center;
+  top: 45vh;
+  width: 20vw;
+}
+
+
+.popover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1060;
+  display: none;
+  font-family: "sans-serif";
+  font-size: 14px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0,0,0,.2);
+}
+
+.popover.top {
+  margin-top: -12px
+}
+
+.popover.right {
+  margin-left: 10px
+}
+
+.popover.bottom {
+  margin-top: 10px
+}
+
+.popover.left {
+  margin-left: -10px
+}
+
+.popover-title {
+  padding: 8px 14px;
+  margin: 0;
+  font-size: 14px;
+  background-color: #f7f7f7;
+  border-bottom: 1px solid #ebebeb;
+  border-radius: 5px 5px 0 0
+}
+
+.popover-content {
+  height: 100%;
+  width: 100%;
+  display:flex;
+  overflow:hidden;
+  font-family:Mulish, sans-serif;
+}
+
+
+
+.popover>.arrow,.popover>.arrow:after {
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid
+}
+
+.popover>.arrow {
+  border-width: 11px
+}
+
+.popover>.arrow:after {
+  content: "";
+  border-width: 10px
+}
+
+.popover.top>.arrow {
+  bottom: -11px;
+  left: 50%;
+  margin-left: -11px;
+  border-top-color: #999;
+  border-top-color: rgba(0,0,0,.25);
+  border-bottom-width: 0
+}
+
+.popover.top>.arrow:after {
+  bottom: 1px;
+  margin-left: -10px;
+  content: " ";
+  border-top-color: #fff;
+  border-bottom-width: 0
+}
+
+.popover.right>.arrow {
+  top: 50%;
+  left: -11px;
+  margin-top: -11px;
+  border-right-color: #999;
+  border-right-color: rgba(0,0,0,.25);
+  border-left-width: 0
+}
+
+.popover.right>.arrow:after {
+  bottom: -10px;
+  left: 1px;
+  content: " ";
+  border-right-color: #fff;
+  border-left-width: 0
+}
+
+.popover.bottom>.arrow {
+  top: -11px;
+  left: 50%;
+  margin-left: -11px;
+  border-top-width: 0;
+  border-bottom-color: #999;
+  border-bottom-color: rgba(0,0,0,.25)
+}
+
+.popover.bottom>.arrow:after {
+  top: 1px;
+  margin-left: -10px;
+  content: " ";
+  border-top-width: 0;
+  border-bottom-color: #fff
+}
+
+.popover.left>.arrow {
+  top: 50%;
+  right: -11px;
+  margin-top: -11px;
+  border-right-width: 0;
+  border-left-color: #999;
+  border-left-color: rgba(0,0,0,.25)
+}
+
+.popover.left>.arrow:after {
+  right: 1px;
+  bottom: -10px;
+  content: " ";
+  border-right-width: 0;
+  border-left-color: #fff
+}
+
+
+
+
+
+
+</style>
+	</head>
+	
+	<body style="margin: 0;background: #ffffff;">
+		<input type="hidden" id="anPageName" name="page" value="homepage">
+		<div class="container-center-horizontal">
+			<div class="homepage screen " data-id="3:446">
+				<footer class="footer-zYNucu" data-id="3:447">
+					<div class="data-bUVegb data" data-id="3:448">
+						<p class="copyright-text-RSUVkZ poppins-normal-gravel-12px" data-id="3:449">Copyright © 2022 Xpro . All Rights Reseved.</p>
+						<div class="logo-itema-RSUVkZ" data-id="3:450">
+							<div class="items-x6dBFz" data-id="3:451">
+								<div class="careers-EOZ97H poppins-normal-gravel-16px" data-id="3:452">Careers</div>
+								<div class="blog-EOZ97H poppins-normal-gravel-16px" data-id="3:453">Blog</div>
+								<div class="invoicing-EOZ97H poppins-normal-gravel-16px" data-id="3:454">Invoicing</div>
+								<div class="contract-EOZ97H poppins-normal-gravel-16px" data-id="3:455">Contract</div>
+								<div class="faqs-EOZ97H poppins-normal-gravel-16px" data-id="3:456">FAQ,s</div>
+								<div class="support-center-EOZ97H poppins-normal-gravel-16px " data-id="3:457">Support Center</div>
+							</div>
+							<div class="fasco-x6dBFz fasco" data-id="3:458">FASCO</div>
+						</div>
+					</div>
+					
+				</footer>
+				<div class="subscribe-zYNucu" data-id="3:460">
+					<div class="group-1000001746-cxUXOc" data-id="3:461">
+						<div class="button-ygKJBp button hvr-grow-shadow" data-id="3:462">
+							<div class="bg-dtHx9Z" data-id="3:463"></div>
+							<div class="subscribe-now-dtHx9Z poppins-normal-white-16px" data-id="3:464">Subscribe Now</div>
+						</div>
+						<div class="email-input-field-ygKJBp" data-id="3:465">
+							<div class="bg-gY8XCJ" data-id="3:466">
+							</div>
+							<div class="email-gY8XCJ" data-id="3:467">michael@ymail.com</div>
+						</div>
+						<div class="title-text-ygKJBp title-text" data-id="3:468">
+							<p class="lorem-ipsum-dolor-si-WDJc5J lorem-ipsum-dolor-si poppins-normal-stack-16px" data-id="3:469">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque duis ultrices sollicitudin aliquam sem. Scelerisque duis ultrices sollicitudin</p>
+							<div class="subscribe-to-our-newsletter-WDJc5J volkhov-normal-gravel-46px" data-id="3:470">Subscribe To Our Newsletter</div>
+						</div>
+					</div>
+					<img class="image-2-cxUXOc" data-id="3:471" src="imgae/men-31.png" alt="image 2">
+					
+					<img class="image-3-cxUXOc" data-id="3:472" src="imgae/women-32.png" alt="image 3">
+				</div>
+				<div class="testimonials-zYNucu" data-id="3:473">
+					<div class="bg-L773TV" data-id="3:474"></div>
+					<div class="title-text-L773TV title-text" data-id="3:475">
+						<p class="lorem-ipsum-dolor-si-dhjzdF lorem-ipsum-dolor-si poppins-normal-stack-16px" data-id="3:476">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque duis</p>
+						<p class="this-is-what-our-customers-say-dhjzdF volkhov-normal-gravel-46px" data-id="3:477">This Is What Our Customers Say</p>
+					</div>
+					<div class="card-L773TV card" data-id="3:478"><div class="bg-mx95Qb" data-id="3:479"></div>
+						<div class="data-mx95Qb data" data-id="3:480">
+							<img class="stars-05S6fo stars" data-id="3:481" src="imgae/stars-21.png" alt="stars">
+							<p class="just-what-i-was-look-05S6fo poppins-normal-gravel-12px" data-id="3:487">“Just what I was looking for. Thank you for making it painless, pleasant and most of all hassle free! All products are great.”</p>
+							<div class="ui-designer-05S6fo ui-designer poppins-normal-gravel-12px" data-id="3:488">UI Designer</div>
+							<div class="megen-w-05S6fo" data-id="3:489">Megen W.</div>
+							<div class="separator-05S6fo" data-id="3:490"></div>
+						</div>
+						<div class="image-mx95Qb image" data-id="3:491">
+							<div class="bg-rrF9Kd" data-id="3:492"></div>
+							
+						</div>
+					</div>
+					<div class="card-6U14ry card" data-id="3:494">
+						<div class="bg-aKJAGq" data-id="3:495"></div>
+						<div class="data-aKJAGq data" data-id="3:496">
+							<img class="stars-xAwZEq stars" data-id="3:497" src="imgae/stars-21.png" alt="stars">
+							<p class="items-that-i-ordered-xAwZEq poppins-normal-gravel-12px" data-id="3:503">“Items That I ordered were the best investment I ever made. I can't say enough about your quality service."</p>
+							<div class="ui-designer-xAwZEq ui-designer poppins-normal-gravel-12px" data-id="3:504">UI Designer</div>
+							<div class="suzan-b-xAwZEq" data-id="3:505">Suzan B.</div>
+							<div class="separator-xAwZEq" data-id="3:506"></div>
+						</div>
+						<div class="image-aKJAGq image" data-id="3:507">
+							<div class="bg-goFERh" data-id="3:508"></div>
+							<img class="image-goFERh image" data-id="3:509" src="imgae/women-30.jpg" alt="image">
+						</div>
+					</div>
+					<div class="card-5x680H card" data-id="3:510">
+						<div class="bg-ZUwRz1" data-id="3:511">
+						</div>
+						<div class="data-ZUwRz1 data" data-id="3:512">
+							<img class="stars-8y7fbV stars" data-id="3:513" src="imgae/stars-21.png" alt="stars">
+							<p class="you-wont-regret-it-i-8y7fbV poppins-normal-gravel-16px" data-id="3:519">"You won't regret it. I would like to personally thank you for your outstanding product. Absolutely wonderful!"</p>
+							<div class="traveler-8y7fbV poppins-normal-gravel-16px" data-id="3:520">Traveler</div>
+							<div class="james-k-8y7fbV" data-id="3:521">James K.</div>
+							<div class="separator-8y7fbV" data-id="3:522"></div>
+						</div>
+						<div class="image-ZUwRz1 image" data-id="3:523">
+							<div class="bg-LEQQXo" data-id="3:524"></div>
+							<img class="image-LEQQXo image" data-id="3:525" src="imgae/men-29.jpg" alt="image">
+						</div>
+					</div>
+					<div class="arrows-L773TV arrows" data-id="3:526">
+						<div class="arrow-F3a98v arrow" data-id="3:527">
+							<div class="ellipse-4-mfHlQx ellipse-4" data-id="3:528"></div>
+							<i class="fa-sharp-duotone fa-solid fa-chevron-right"></i>
+
+						</div>
+						<div class="arrow-BYxKFC arrow" data-id="3:530">
+							<div class="ellipse-4-aKXpmE ellipse-4" data-id="3:531"></div>
+							
+							<i class="fa-sharp fa-solid fa-angle-right"></i>
+							
+						</div>
+					</div>
+				</div>
+				<div class="gallery-zYNucu" data-id="3:533">
+					<div class="image-IYme16 image" data-id="3:534">
+						<img class="image-UkiVBR image" data-id="3:535" src="imgae/men-22.jpg" alt="image">
+						
+						<img class="image-b8PAfZ image" data-id="3:536" src="imgae/women-28.jpg" alt="image">
+						
+						<img class="image-ZI4J9D image hvr-grow" data-id="3:537" src="imgae/men-23.jpg" alt="image">
+						
+						<img class="image-Go6OBH image hvr-grow" data-id="3:538" src="imgae/men-25.jpg" alt="image">
+						
+						<img class="image-lefD8E image hvr-grow" data-id="3:539" src="imgae/men-27.jpg" alt="image">
+						
+						<img class="image-2SrNuS image hvr-grow" data-id="3:540" src="imgae/women-24.jpg" alt="image">
+						
+						<img class="image-q6yBPT image hvr-grow" data-id="3:541" src="imgae/women-26.jpg" alt="image">
+					</div>
+					
+					<div class="title-text-IYme16 title-text" data-id="3:542">
+						<p class="lorem-ipsum-dolor-si-qRp2K5 lorem-ipsum-dolor-si poppins-normal-stack-16px" data-id="3:543">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque duis ultrices sollicitudin aliquam sem. Scelerisque duis ultrices sollicitudin</p>
+						<div class="follow-us-on-instagram-qRp2K5 volkhov-normal-gravel-46px" data-id="3:544">Follow Us On Instagram</div>
+					</div>
+				</div>
+				
+				<div class="features-zYNucu features" data-id="3:545">
+					<div class="bg-qrJHix" data-id="3:546"></div>
+					<div class="features-qrJHix features" data-id="3:547">
+						<div class="feature-36Snsl feature" data-id="3:548">
+							<div class="text-JWQVAs text" data-id="3:549">
+								<div class="high-quality-HeYAJI poppins-medium-gravel-20px" data-id="3:550">High Quality</div>
+								<div class="crafted-from-top-materials-HeYAJI poppins-normal-gravel-16px" data-id="3:551">crafted from top materials</div>
+								
+							
+							</div>
+								<i class="fab fa-sharp-duotone fa-solid fa-medal fa-2x"></i>
+						
+						</div>
+						
+						<div class="feature-Wp3fEe feature" data-id="3:555">
+							<div class="text-8ouDiV text" data-id="3:556">
+								<div class="warrany-protection-lxuvXP poppins-medium-gravel-20px" data-id="3:557">Warrany Protection</div>
+								
+								<div class="over-2-years-lxuvXP poppins-normal-gravel-16px" data-id="3:558">Over 2 years</div>
+							</div>
+							
+							<i class="fab fa-sharp-duotone fa-solid fa-hand-holding-heart fa-2x"></i>
+						
+						</div>
+						
+						<div class="feature-NZCS7E feature" data-id="3:563">
+							<div class="text-8Kpdeb text" data-id="3:564">
+								<div class="free-shipping-yC0eUD poppins-medium-gravel-20px" data-id="3:565">Free Shipping</div>
+								<div class="order-over-150-yC0eUD poppins-normal-gravel-16px" data-id="3:566">Order over 150 $</div>
+							</div>
+							<i class="fab fa-sharp-duotone fa-solid fa-truck fa-2x"></i>
+						</div>
+						
+						<div class="feature-3URxp4 feature" data-id="3:568">
+							<div class="text-HsFPi4 text" data-id="3:569"><div class="x24-7-support-Rxfn5j poppins-medium-gravel-20px" data-id="3:570">24 / 7 Support</div>
+								<div class="dedicated-support-Rxfn5j poppins-normal-gravel-16px" data-id="3:571">Dedicated support</div>
+							</div>
+							
+							<i class="fab fa-sharp-duotone fa-solid fa-phone fa-2x" ></i>
+						</div>
+					</div>
+				</div>
+				
+				<div class="slider-zYNucu slider" data-id="3:579">
+					<div class="text-Ap9U61 text" data-id="3:580">
+						
+						<img class="bg-vezJHx" data-id="3:581" src="imgae/bg.png" alt="bg">
+						<div class="title-text-vezJHx title-text" data-id="3:582">
+							<div class="button-gXUcOT button  hvr-grow-shadow" data-id="3:583">
+								<div class="bg-wgzW4P" data-id="3:584"></div>
+								<div class="buy-now-wgzW4P buy-now poppins-normal-white-16px" data-id="3:585">Buy Now</div>
+							</div>
+							<div class="x10000-gXUcOT" data-id="3:586">
+								<span class="span0-5JqBbk">$100.</span>
+								<span class="span1-5JqBbk">00</span>
+							</div>
+							<div class="size-gXUcOT size" data-id="3:587">
+								<div class="m-xbcjlx m" data-id="3:588">
+									<div class="bg-vllp27" data-id="3:589"></div>
+									<div class="m-vllp27 m poppins-normal-white-16px" data-id="3:590">M</div>
+								</div>
+								<div class="size-xbcjlx size poppins-normal-sonic-silver-16px" data-id="3:591">Size:</div>
+							</div>
+							<p class="lorem-ipsum-dolor-si-gXUcOT lorem-ipsum-dolor-si poppins-normal-sonic-silver-16px" data-id="3:592">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque duis ultrices sollicitudin aliquam sem. Scelerisque duis ultrices sollicitudin. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque duis.</p>
+							<div class="description-gXUcOT poppins-normal-black-16px" data-id="3:593">DESCRIPTION</div>
+							<div class="peaky-blinders-gXUcOT volkhov-normal-gravel-46px" data-id="3:594">Peaky Blinders</div>
+							<div class="women-collection-gXUcOT poppins-normal-sonic-silver-16px" data-id="3:595">Women Collection</div>
+						</div>
+					</div>
+					<div class="image-Ap9U61 image" data-id="3:596">
+						<img class="bg-mmCFFt" data-id="3:597" src="imgae/bg.png" alt="bg"><img class="image-mmCFFt image" data-id="3:598" src="imgae/women-21.jpg" alt="image"><div class="points-mmCFFt" data-id="3:599">
+						<div class="point-QndvRc" data-id="3:600">
+							<div class="text-6m2nZm text" data-id="3:601">
+								<div class="bg-dpS4kr" data-id="3:602"></div>
+								<div class="flat-cap-dpS4kr poppins-normal-black-16px" data-id="3:603">Flat Cap</div>
+							</div>
+							<div class="point-6m2nZm" data-id="3:604">
+								
+								
+								
+								<div class="point-toVQpP" data-id="3:606"></div></div></div>
+						<div class="point-xsxvM6" data-id="3:607">
+							<div class="text-44G7lJ text" data-id="3:608"><div class="bg-ZXPCOZ" data-id="3:609"></div>
+						<div class="hugo-boss poppins-normal-black-16px" data-id="3:610">Hugo Boss</div>
+								
+						</div>
+						<div class="point-44G7lJ" data-id="3:611">
+						
+						<div class="point-Ms469x" data-id="3:613"></div>
+						
+						</div>
+						</div>
+						<div class="point-guK8xk" data-id="3:614">
+							<div class="text-s2wazl text" data-id="3:615">
+								<div class="bg-ugxKxQ" data-id="3:616"></div>
+								<div class="santoni-ugxKxQ poppins-normal-black-16px" data-id="3:617">Santoni</div>
+							</div>
+							<div class="point-s2wazl" data-id="3:618">
+								<div class="point-ZLKwP9" data-id="3:620"></div>
+							</div>
+						</div>
+						<div class="point-VC2oZ2" data-id="3:621">
+							<div class="text-a6ZYMV text" data-id="3:622">
+								<div class="bg-5l7LNJ" data-id="3:623"></div>
+								<div class="suspender-5l7LNJ poppins-normal-black-16px" data-id="3:624">Suspender</div>
+							</div>
+							<div class="point-a6ZYMV" data-id="3:625">
+								
+								<div class="point-PiR4ix" data-id="3:627"></div>
+							</div></div><div class="point-N5Z5zk" data-id="3:628"><div class="text-BcOlZq text" data-id="3:629"><div class="bg-YdME5u" data-id="3:630"></div>
+						<div class="hugo-boss poppins-normal-black-16px" data-id="3:631">Hugo Boss</div>
+						</div>
+						<div class="point-BcOlZq" data-id="3:632">
+							
+							<div class="point-7xsMiA" data-id="3:634"></div>
+						</div>
+						</div>
+						</div>
+					</div>
+					<div class="separator-Ap9U61" data-id="3:635"></div>
+				</div>
+				<div class="new-arrivals-zYNucu new-arrivals" data-id="3:636">
+					<div class="button-OOBmtD button  hvr-grow-shadow" data-id="3:637">
+						<div class="bg-9Zd2hc " data-id="3:638"></div>
+						<div class="view-more-9Zd2hc poppins-normal-white-16px" data-id="3:639">View More</div>
+					</div>
+					<div class="products-OOBmtD products " data-id="3:640">
+						<div class="product-hDxXZZ product hvr-grow " data-id="3:641">
+							<div class="base  " data-id="3:642"></div>
+							<div class="texts" data-id="3:643">
+								<div class="x9550 poppins-medium-gravel-24px" data-id="3:644">$95.50</div>
+								<div class="almost-sold-out poppins-normal-tart-orange-12px" data-id="3:645">Almost Sold Out</div>
+								<div class="x41k-customer-reviews poppins-medium-gravel-12px" data-id="3:646">(4.1k) Customer Reviews</div>
+								
+								<img class="stars-dibSOr stars" data-id="3:647" src="imgae/stars-21.png" alt="stars">
+								
+								<div class="name-brand-dibSOr name-brand" data-id="3:653">
+									<div class="al-karam poppins-medium-stack-12px" data-id="3:654">Al Karam</div>
+									<div class="shiny-dress-MxDSpx poppins-medium-gravel-20px" data-id="3:655">Shiny Dress</div>
+								</div>
+							</div>
+							
+							<img class="images-QNxLf9 images" data-id="3:656" src="imgae/women-15.jpg" alt="Images">
+						
+						</div>
+						
+						<div class="product-JEHKlH product hvr-grow" data-id="3:657">
+							<div class="base" data-id="3:658"></div><div class="texts" data-id="3:659">
+							<div class="x9550 poppins-medium-gravel-24px" data-id="3:660">$95.50</div>
+							<div class="almost-sold-out poppins-normal-tart-orange-12px" data-id="3:661">Almost Sold Out</div>
+							<div class="x41k-customer-reviews poppins-medium-gravel-12px" data-id="3:662">(4.1k) Customer Reviews</div>
+							
+							<img class="stars-4892Xj stars" data-id="3:663" src="imgae/stars-21.png" alt="stars">
+							
+							<div class="name-brand-4892Xj name-brand" data-id="3:669">
+								
+								<div class="al-karam poppins-medium-stack-12px" data-id="3:670">Al Karam</div>
+								
+								<div class="white-dress-43l2pL poppins-medium-gravel-20px" data-id="3:671">White Dress</div>
+							</div>
+							</div>
+							<img class="images-n73dOd images" data-id="3:672" src="imgae/women-18.jpg" alt="Images">
+						
+						</div>
+						
+						<div class="product-mB18W0 product hvr-grow" data-id="3:673">
+							<div class="base" data-id="3:674"></div>
+							<div class="texts" data-id="3:675">
+								<div class="x9550 poppins-medium-gravel-24px" data-id="3:676">$95.50</div>
+								<div class="almost-sold-out poppins-normal-tart-orange-12px" data-id="3:677">Almost Sold Out</div>
+								<div class="x41k-customer-reviews poppins-medium-gravel-12px" data-id="3:678">(4.1k) Customer Reviews</div>
+								<img class="stars-iY4EW6 stars" data-id="3:679" src="imgae/stars-21.png" alt="stars">
+								
+								<div class="name-brand-iY4EW6 name-brand" data-id="3:685">
+									<div class="al-karam poppins-medium-stack-12px" data-id="3:686">Al Karam</div>
+									<div class="long-dress-BVSFK7 poppins-medium-gravel-20px" data-id="3:687">Long Dress</div>
+								</div>
+							</div>
+							<img class="images-KpmnOl images" data-id="3:688" src="imgae/women-16.jpg" alt="Images">
+						</div>
+						<div class="product-Za4fqI product hvr-grow" data-id="3:689">
+						<div class="base" data-id="3:690">
+						</div>
+						<div class="texts" data-id="3:691">
+							<div class="x9550 poppins-medium-gravel-24px" data-id="3:692">$95.50</div>
+							<div class="almost-sold-out poppins-normal-tart-orange-12px" data-id="3:693">Almost Sold Out</div>
+							<div class="x41k-customer-reviews poppins-medium-gravel-12px" data-id="3:694">(4.1k) Customer Reviews</div>
+							
+							<img class="stars-h51RVY stars" data-id="3:695" src="imgae/stars-21.png" alt="stars">
+							<div class="name-brand-h51RVY name-brand" data-id="3:701">
+								<div class="al-karam poppins-medium-stack-12px" data-id="3:702">Al Karam</div>
+								<div class="colorful-dress-QjbhxV poppins-medium-gravel-20px" data-id="3:703">Colorful Dress</div>
+							</div>
+						</div>
+						<img class="images-r2MPxW images" data-id="3:704" src="imgae/women-19.jpg" alt="Images">
+						</div>
+				<div class="product-WPxFXb product hvr-grow" data-id="3:705">
+					<div class="base" data-id="3:706"></div>
+					<div class="texts" data-id="3:707">
+						<div class="x9550 poppins-medium-gravel-24px" data-id="3:708">$95.50</div><div class="almost-sold-out poppins-normal-tart-orange-12px" data-id="3:709">Almost Sold Out</div>
+						<div class="x41k-customer-reviews poppins-medium-gravel-12px" data-id="3:710">(4.1k) Customer Reviews</div>
+						
+						<img class="stars-b9pz5P stars" data-id="3:711" src="imgae/stars-21.png" alt="stars">
+						
+						<div class="name-brand-b9pz5P name-brand" data-id="3:717">
+							<div class="al-karam poppins-medium-stack-12px" data-id="3:718">Al Karam</div>
+							<div class="full-sweater-jFH24r poppins-medium-gravel-20px" data-id="3:719">Full Sweater</div>
+						</div>
+					</div>
+					<img class="images-Hxmx2v images" data-id="3:720" src="imgae/women-17.jpg" alt="Images">
+				</div>
+				<div class="product-yVS4px product hvr-grow" data-id="3:721">
+					<div class="base" data-id="3:722"></div>
+					<div class="texts" data-id="3:723">
+						<div class="x9550 poppins-medium-gravel-24px" data-id="3:724">$95.50</div><div class="almost-sold-out poppins-normal-tart-orange-12px" data-id="3:725">Almost Sold Out</div>
+						<div class="x41k-customer-reviews poppins-medium-gravel-12px" data-id="3:726">(4.1k) Customer Reviews</div>
+						<img class="stars-6dTLyx stars" data-id="3:727" src="imgae/stars-21.png" alt="stars">
+						<div class="name-brand-6dTLyx name-brand" data-id="3:733">
+							<div class="al-karam poppins-medium-stack-12px" data-id="3:734">Al Karam</div>
+							<div class="white-shirt-DF9EwW poppins-medium-gravel-20px" data-id="3:735">White Shirt</div>
+						</div>
+					</div>
+					<img class="images-rl0U5x images" data-id="3:736" src="imgae/women-20.jpg" alt="Images">
+				</div>
+				</div>
+				<div class="categories-OOBmtD" data-id="3:737">
+					<div class="category-32E0W1 category" data-id="3:738">
+						<div class="bg-WI8NxZ" data-id="3:739"></div>
+						<div class="mens-fashion-WI8NxZ poppins-normal-stack-16px" data-id="3:740">Men’s Fashion</div>
+					</div>
+					<div class="category-W2cUzu category" data-id="3:741">
+						<div class="bg-ajroGi" data-id="3:742"></div>
+						<div class="womens-fashion-ajroGi poppins-normal-white-16px" data-id="3:743">Women’s Fashion</div></div><div class="category-RnnREJ category" data-id="3:744"><div class="bg-e99hmM" data-id="3:745">
+					</div>
+					<div class="women-accessories-e99hmM poppins-normal-stack-16px" data-id="3:746">Women Accessories</div>
+					</div>
+					<div class="category-jHdqPc category" data-id="3:747">
+						<div class="bg-RWoVag" data-id="3:748"></div>
+						<div class="men-accessories-RWoVag poppins-normal-stack-16px" data-id="3:749">Men Accessories</div>
+					</div>
+					<div class="category-xy9PL8 category" data-id="3:750">
+						<div class="bg-Ah3gbv" data-id="3:751"></div>
+						<div class="discount-deals-Ah3gbv poppins-normal-stack-16px" data-id="3:752">Discount Deals</div>
+					</div>
+				</div>
+				<div class="title-text-OOBmtD title-text" data-id="3:753">
+					<p class="lorem-ipsum-dolor-si-fRgxGd lorem-ipsum-dolor-si poppins-normal-stack-16px" data-id="3:754">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque duis ultrices sollicitudin aliquam sem. Scelerisque duis ultrices sollicitudin</p>
+					<div class="new-arrivals-fRgxGd new-arrivals volkhov-normal-gravel-46px" data-id="3:755">New Arrivals</div>
+				</div>
+				</div>
+				<div class="deal-of-the-month-zYNucu" data-id="3:756">
+					<div class="bg-i3zxnR" data-id="3:757"></div>
+					<div class="products-i3zxnR products" data-id="3:758">
+						<div class="image-PtqIYf image" data-id="3:759">
+							<img class="image-a2y06x image" data-id="3:760" src="imgae/women-11.jpg" alt="image">
+							
+							<img class="text-a2y06x text" data-id="3:761" src="imgae/text-12.jpg" alt="text">
+						</div>
+						
+						<img class="image-gXftdF image" data-id="3:768" src="imgae/women-13.jpg" alt="image">
+						
+						<img class="image-iZpPUt image" data-id="3:769" src="imgae/women-14.jpg" alt="image">
+						
+						<div class="slider-PtqIYf slider" data-id="3:770">
+							<div class="active-IemnIK" data-id="3:771">
+								<div class="ellipse-2-9l4CQP" data-id="3:772"></div>
+								<div class="ellipse-1-9l4CQP ellipse-1" data-id="3:773"></div>
+							</div>
+							<div class="ellipse-1-IemnIK ellipse-1" data-id="3:774"></div>
+							
+							<div class="ellipse-2-IemnIK" data-id="3:775"></div>
+							
+							<div class="ellipse-3-IemnIK" data-id="3:776"></div>
+						</div>
+						
+						<div class="arrows-PtqIYf arrows" data-id="3:777">
+							<div class="arrow-EdBvG9 arrow" data-id="3:778">
+								<div class="ellipse-4-daJ0u9 ellipse-4" data-id="3:779"></div>
+								
+								<i class="fa-sharp-duotone fa-solid fa-chevron-right"></i>
+							</div>
+							<div class="arrow-JuoTYW arrow" data-id="3:781">
+								<div class="ellipse-4-d59JHL ellipse-4" data-id="3:782"></div>
+								<i class="fa-sharp fa-solid fa-angle-right"></i>
+							</div>
+						</div>
+					</div>
+					<div class="timer-i3zxnR timer" data-id="3:784"><div class="timer-0mwIat timer" data-id="3:785">
+						<div class="days-6y7NQm days" data-id="3:786">
+							<div class="group-4337-xG7kms" data-id="3:787">
+								<div class="rectangle-19257-e31EBY" data-id="3:788"></div>
+								<div class="x02-e31EBY digitalnumbers-regular-normal-gravel-32px" data-id="3:789">02</div>
+							</div>
+							<div class="days-xG7kms days poppins-normal-gravel-24px" data-id="3:790">Days</div>
+						</div>
+						<div class="hr-6y7NQm hr" data-id="3:791">
+							<div class="group-4338-xipZri" data-id="3:792">
+								<div class="rectangle-19258-b0SXFD" data-id="3:793"></div>
+								<div class="x06-b0SXFD digitalnumbers-regular-normal-gravel-32px" data-id="3:794">06</div>
+							</div>
+							<div class="hr-xipZri hr poppins-normal-gravel-24px" data-id="3:795">Hr</div>
+						</div>
+						
+						<div class="sec-6y7NQm sec" data-id="3:796"><div class="group-4340-LvcoNm" data-id="3:797">
+							<div class="rectangle-19260-glMrZG" data-id="3:798"></div>
+							<div class="x30-glMrZG digitalnumbers-regular-normal-gravel-32px" data-id="3:799">30</div>
+							</div><div class="sec-LvcoNm sec poppins-normal-gravel-24px" data-id="3:800">Sec</div>
+						</div>
+						
+						<div class="mins-6y7NQm mins" data-id="3:801">
+							<div class="group-4339-0VxFrW" data-id="3:802">
+								<div class="rectangle-19259-3oR2Tr" data-id="3:803"></div>
+								<div class="x05-3oR2Tr digitalnumbers-regular-normal-gravel-32px" data-id="3:804">05</div></div>
+							<div class="mins-0VxFrW mins poppins-normal-gravel-24px" data-id="3:805">Mins</div>
+						</div>
+						</div>
+						<p class="hurry-before-its-too-late-0mwIat" data-id="3:806">Hurry, Before It’s Too Late!</p>
+					</div>
+					
+					<div class="text-button-i3zxnR text-button" data-id="3:807">
+						<div class="button-IpJUK5 button hvr-grow-shadow" data-id="3:808">
+							<div class="bg-06NO1Z" data-id="3:809"></div>
+							<div class="buy-now-06NO1Z buy-now poppins-normal-white-16px" data-id="3:810">Buy Now</div>
+						</div>
+						<div class="title-text-IpJUK5 title-text" data-id="3:811">
+							<p class="lorem-ipsum-dolor-si-Z40qxA lorem-ipsum-dolor-si poppins-normal-stack-16px" data-id="3:812">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque duis ultrices sollicitudin aliquam sem. Scelerisque duis ultrices sollicitudin</p>
+							<div class="deals-of-the-month-Z40qxA volkhov-normal-gravel-46px" data-id="3:813">Deals Of The Month</div>
+						</div>
+					</div>
+				</div>
+				<div class="logos-zYNucu logos" data-id="3:814">
+					<div class="bg-8ccAJo" data-id="3:815"></div>
+					<div class="logos-8ccAJo logos" data-id="3:816">
+						<img class="logo-vd1o5s logo" data-id="3:817" src="imgae/logo-denim-10.png" alt="logo">
+						
+						<img class="logo-3tGyIx logo" data-id="3:818" src="imgae/logo-prada-08.png" alt="logo">
+						
+						<img class="logo-77jgKJ logo" data-id="3:819" src="imgae/logo-chanel-06.png" alt="logo">
+						
+						<img class="logo-xWT90F logo" data-id="3:820" src="imgae/logo-louis-07.png" alt="logo">
+						
+						<img class="logo-RwT0Fx logo" data-id="3:821" src="imgae/logo-calvin-09.png" alt="logo">
+					</div>
+				</div>
+				
+				<header class="header-zYNucu" data-id="3:822">
+					<img class="images-num0gs images" data-id="3:823" src="imgae/two-women-05.jpg" alt="images">
+					
+					<img class="images-LynBye images" data-id="3:826" src="imgae/four-women-04.jpg" alt="images">
+					
+					<div class="text-button-num0gs text-button" data-id="3:831">
+						<div class="sale-6ppo3C" data-id="3:832">
+							<h1 class="title-N4qMMx" data-id="3:834">SALE</h1>
+						</div>
+						<div class="ultimate-6ppo3C ultimate" data-id="3:835">
+							<div class="ultimate-LBYzPj ultimate" data-id="3:837">ULTIMATE</div>
+						</div>
+						<div class="new-collection-6ppo3C" data-id="3:838">NEW COLLECTION</div>
+						<div class="button-6ppo3C button " data-id="3:839">
+							<div class="bg-4E1B27" data-id="3:840"></div>
+							<div class="shop-now-4E1B27" data-id="3:841">SHOP NOW</div>
+						</div>
+					</div>
+					<div class="nav-bar-num0gs" data-id="3:842">
+						<div class="nav-elements-Y2wPoM" data-id="3:843">
+							<div class="button-I1nHt3 button" data-id="3:844">
+								<div class="bg-S09mKh" data-id="3:845"></div>
+								<div class="sign-up-S09mKh poppins-normal-white-16px" data-id="3:846">Sign Up</div>
+							</div>
+							<div class="sign-in-I1nHt3 poppins-normal-gravel-16px" data-id="3:847">Sign in</div>
+							<div class="home-I1nHt3 poppins-normal-gravel-16px" data-id="3:848">Home</div>
+							<div class="deals-I1nHt3 poppins-normal-gravel-16px" data-id="3:849">
+							
+							<a href="deal.html">Deal</a>
+							</div>
+							<div class="new-arrivals-I1nHt3 new-arrivals poppins-normal-gravel-16px" data-id="3:850">New Arrivals</div>
+							<div class="packages-I1nHt3 poppins-normal-gravel-16px" data-id="3:851">Packages</div>
+						</div>
+						<div class="fasco-Y2wPoM fasco" data-id="3:852">FASCO</div>
+					</div>
+				</header>
+				<img class="group-1000001796-zYNucu" data-id="3:853" src="imgae/men-02.jpg" alt="Group 1000001796">
+				
+				<img class="group-1000001797-zYNucu" data-id="3:860" src="imgae/men-03.jpg" alt="Group 1000001797">
+				
+				
+			
+			</div>
+		</div>
+		
+		
+     
+		
+</body>
+	
+</html>
